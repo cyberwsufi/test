@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#201b18">
+<title>Profile · AURELIA</title>
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header data-header></header>
+
+<main class="container"><section class="page-hero"><div class="eyebrow">My Aurelia</div><h1>Your ritual, your way.</h1><p class="lead">Manage your profile, preferences and order history.</p></section>
+<div class="profile-layout">
+<aside class="profile-card"><img id="avatar" class="avatar" src="assets/avatar-placeholder.svg" alt="Profile portrait"><div class="avatar-upload"><input id="avatar-input" type="file" accept="image/*"><label for="avatar-input">Change portrait</label></div><button id="logout" class="button button-dark button-wide" style="margin-top:25px">Sign out</button></aside>
+<section>
+<form id="profile-form" class="form-card"><div class="eyebrow">Profile</div><h2>Personal details</h2>
+<div class="field"><label>Name</label><input name="full_name"></div>
+<div class="field"><label>Hair type</label><select name="hair_type"><option value="normal">Normal</option><option value="dry">Dry</option><option value="oily">Oily</option><option value="curly">Curly / textured</option><option value="fine">Fine</option></select></div>
+<div class="field"><label>Primary goal</label><input name="goals" placeholder="e.g. repair, growth, shine"></div>
+<button class="button button-dark" type="submit">Save changes</button></form>
+<div style="margin-top:55px"><div class="eyebrow">Order history</div><h2>Past rituals</h2><div id="orders"></div></div>
+</section></div></main><footer data-footer></footer><script type="module" src="js/profile.js"></script>
+</body></html>

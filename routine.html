@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#201b18">
+<title>Find Your Ritual · AURELIA</title>
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header data-header></header>
+
+<main class="container"><section class="page-hero"><div class="eyebrow">Ritual finder</div><h1>Meet your hair where it is.</h1><p class="lead">A tiny diagnostic to help you choose a simple starting routine.</p></section>
+<section class="routine-layout"><form id="routine-form" class="routine-form">
+<div class="field"><label>Hair type</label><div class="choice-grid">
+<label class="choice"><input required type="radio" name="type" value="dry"> Dry</label><label class="choice"><input type="radio" name="type" value="oily"> Oily</label><label class="choice"><input type="radio" name="type" value="normal"> Normal</label><label class="choice"><input type="radio" name="type" value="curly"> Curly / textured</label></div></div>
+<div class="field"><label>Your main goal</label><div class="choice-grid">
+<label class="choice"><input required type="radio" name="goal" value="repair"> Repair</label><label class="choice"><input type="radio" name="goal" value="growth"> Growth</label><label class="choice"><input type="radio" name="goal" value="shine"> Shine</label><label class="choice"><input type="radio" name="goal" value="balance"> Balance</label></div></div>
+<button class="button button-dark button-wide" type="submit">Reveal my ritual</button></form>
+<div id="routine-result" class="routine-result" hidden></div></section></main>
+<footer data-footer></footer><script type="module" src="js/routine.js"></script>
+</body></html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#201b18">
+<title>Account · AURELIA</title>
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header data-header></header>
+
+<main class="auth-shell"><section class="auth-card">
+<div class="eyebrow">Aurelia account</div><h1 id="auth-title">Welcome back</h1><p id="auth-subtitle" class="muted">Enter your details to continue.</p>
+<form id="auth-form">
+<div id="name-wrap" class="field" hidden><label>Full name</label><input name="full_name" autocomplete="name"></div>
+<div class="field"><label>Email</label><input required name="email" type="email" autocomplete="email"></div>
+<div class="field"><label>Password</label><input required name="password" type="password" minlength="6" autocomplete="current-password"></div>
+<div class="forgot"><button type="button" class="link-button" id="forgot">Forgot password?</button></div>
+<button class="button button-dark button-wide" id="auth-submit" type="submit">Sign in</button>
+</form><div id="auth-switch" class="form-note"></div>
+</section></main><footer data-footer></footer><script type="module" src="js/auth.js"></script>
+</body></html>
